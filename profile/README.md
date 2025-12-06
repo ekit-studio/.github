@@ -1,243 +1,208 @@
-📘 Ekit — V0 Beta
+# Ekit – V0 Beta
 
 A modern template-driven dynamic content engine with SSR, data sources, live preview, multilingual AI, and a powerful studio built with Angular + Monaco Editor.
 
-Ekit allows developers to create dynamic pages and components using a custom Handlebars-like templating engine, connected to MongoDB datasources, rendered via server-side SSR, and edited in a modern UI with live preview, AI-assisted multilingual data, and snippet generation.
+> **Status**: V0 Beta – Private (non open source)
 
-⚠️ This is the V0 Beta, fully functional and ready for early adopters.
-The goal is to collect feedback before the official V1.
+Ekit allows developers to create dynamic pages and components using a custom Handlebars-like templating engine, connected to MongoDB datasources, rendered via SSR, and edited in a modern UI with live preview, AI-assisted multilingual data, and snippet generation.
 
-🚀 Core Features (V0 Beta)
-🔧 Custom Handlebars Engine
+---
 
-Helpers: each, single, and extended internal helpers
+## Overview
 
-Native access to datasources, assets, and frontmatter
+Ekit is a studio and runtime engine designed to:
 
-Support for layouts, partials, components
+- Define content structures as **datasources** in MongoDB  
+- Create **templates** based on a custom Handlebars-style syntax  
+- Render content via **server-side rendering (SSR)**  
+- Edit content and templates in a **web studio** with live preview  
+- Leverage **AI** for multilingual content and developer productivity  
 
-Dynamic SSR rendering
+This V0 Beta is fully functional and aimed at early adopters and testers.
 
-Clean errors and debug logs
+---
 
-🗂️ Datasources (MongoDB)
+## Core Features (V0 Beta)
 
-Table-based model
+### Custom Handlebars Engine
 
-Supports multilingual fields
+- Custom helpers: `each`, `single`, and internal utility helpers  
+- Native access to datasources, assets, and frontmatter  
+- Support for layouts, partials, and components  
+- Dynamic SSR rendering  
+- Error logging and debug information
 
-Field types: text, number, boolean, select, rich text (WYSIWYG)
+### Datasources (MongoDB)
 
-single and list modes
+- Table-based model backed by MongoDB  
+- Multilingual fields support  
+- Field types: text, number, boolean, select, rich text (WYSIWYG)  
+- `single` and `list` modes  
+- Automatic validation  
+- Live updates reflected instantly in SSR preview  
+- Auto-generated REST API (CRUD) for each datasource
 
-Automatic validation
+### Studio (Angular + Monaco Editor)
 
-Live updates reflected instantly in SSR preview
+- File explorer sidebar with project structure  
+- Multi-tab editor for templates and config files  
+- Monaco Editor integration (syntax highlighting, editing comfort)  
+- Dark UI inspired by Notion / Linear  
+- Live SSR preview with instant update  
+- Data editor (multilingual fields, WYSIWYG, selects, etc.)  
+- Integrated assets browsing and usage
 
-Auto-generated REST API for each datasource (CRUD)
+### AI-Powered Multilingual Support
 
-🌐 Studio (Angular + Monaco Editor)
+Ekit includes built-in AI workflows to handle multilingual content:
 
-File explorer sidebar
+- Automatic translation for fields marked as multilingual  
+- Detection of the source language  
+- Generation of translations for configured target languages  
+- Consistent content across languages  
+- Manual override possible at any time  
 
-Multi-tab editor
+Powered by OpenAI GPT models (or compatible AI backends).
 
-Powerful Monaco Editor integration
+### Intellisense (Beta)
 
-Dark UI inspired by Notion / Linear
+Smart autocompletion inside Monaco Editor:
 
-Live SSR preview with instant update
+**Already available:**
 
-Data editor (multilingual, WYSIWYG, select types, etc.)
+- Suggestions for datasources  
+- Suggestions for fields  
+- Suggestions for helper snippets (`each`, `single`, etc.)  
+- Suggestions for partials and components  
+- Suggestions for assets  
+- Hints for frontmatter YAML
 
-Integrated assets browser
+**To be finalized:**
 
-🤖 AI-Powered Multilingual Support
+- Context-aware suggestions (`this`, nested loops, scopes)  
+- Helper signatures and better types  
+- Improved accuracy and reduced noise  
 
-Ekit includes a built-in AI workflow to automatically generate translations for multilingual fields.
+This is the main “beta” part of the V0.
 
-Detects source language
+### Export Tools
 
-Auto-fills missing languages
+- **Export to Excel (.xlsx)**  
+  - Export full datasources  
+  - Multilingual fields included  
+  - Directly usable in Excel, Google Sheets, BI tools  
 
-Ensures content consistency
+- **YAML + Snippet Generator**  
+  - Generates frontmatter YAML blocks  
+  - Generates ready-to-paste template snippets (loops, singles, partials, fields)  
+  - Helps users integrate datasources quickly in templates  
 
-Manual override supported
+### Authentication
 
-Powered by OpenAI GPT models
+Fully implemented authentication layer:
 
-This feature is fully operational in the V0 Beta.
+- Email / password  
+- Google OAuth  
+- GitHub OAuth  
+- Token / session handling  
+- User storage in MongoDB  
 
-✨ Intellisense (Beta)
+---
 
-Built on top of Monaco Editor, Ekit provides smart autocompletion:
+## Architecture & Tech Stack
 
-Already available:
+- **Frontend**: Angular, Monaco Editor, Material  
+- **Backend**: Node.js, Express  
+- **Realtime**: Socket.IO + Redis adapter  
+- **Database**: MongoDB  
+- **Rendering**: Custom Handlebars engine + SSR  
+- **Deployment**: PM2 cluster, Nginx  
+- **AI**: OpenAI GPT for automatic translations and language support  
 
-Datasources suggestions
+---
 
-Field suggestions
+## What’s Included in the V0 Beta
 
-Snippets for helpers (each, single, etc.)
+The V0 Beta includes:
 
-Partials / components suggestions
+- Full studio UI (editor, preview, datas management)  
+- Custom templating engine  
+- Live SSR preview  
+- Datasources + auto-generated REST API  
+- Authentication (email, Google, GitHub)  
+- AI-powered multilingual translations  
+- Excel (.xlsx) export  
+- YAML & snippet generator  
+- Intellisense (beta)  
+- Error handling and logging  
+- Example project and onboarding flow
 
-Assets autocompletion
+The goal of this Beta is to validate the core UX, stability, and developer experience.
 
-Frontmatter hints
+---
 
-To be finalized:
+## Roadmap
 
-Context-aware suggestions (this, nested scopes)
+### Now (during V0 Beta)
 
-Helper signatures
+- Finalize Intellisense context-awareness  
+- Improve Studio UX (ergonomics, clarity, messages)  
+- Add more template and datasource examples  
+- Polish WYSIWYG editor integration  
+- Improve documentation and onboarding
 
-Improved accuracy + reduced noise
+### Next (V1 Candidate)
 
-This is the main Beta-area of the release.
+- Advanced version history for templates and datasources  
+- Global undo/redo system  
+- Public shareable preview URLs  
+- Plugin system (custom helpers, custom datasources, custom logic)  
+- Multi-project workspaces  
+- Improved asset management and upload flows  
+- Deployment and publishing helpers
 
-📤 Export Tools
-✔️ Export to Excel (XLSX)
+### Later (Post V1)
 
-Datasources can be exported instantly:
+- Marketplace for templates, components, and datasources  
+- Real-time collaborative editing (multi-user)  
+- AI-assisted template generation and refactoring  
+- Built-in hosting and CDN for generated content  
+- ElasticSearch integration for content indexing and search  
+- Analytics and performance dashboards
 
-full table export
+---
 
-multilingual support
+## Access / Beta Program
 
-compatible with Excel / Sheets / BI tools
+Ekit is currently in **private V0 Beta**.  
+The source code is **not open source**.
 
-✔️ YAML + Snippet Generator
+If you are interested in:
 
-An integrated tool that generates:
+- testing the studio,  
+- integrating it in your stack,  
+- or discussing use cases,
 
-frontmatter YAML blocks
+please reach out to the maintainer.
 
-template code snippets (loops, singles, partials, fields…)
+---
 
-ready-to-paste code for the editor
+## Feedback
 
-Huge time-saver for new users.
+Since this is a V0 Beta, feedback is extremely valuable.
 
-🔐 Authentication
+You can report:
 
-Fully implemented:
+- bugs  
+- UX issues  
+- feature requests  
+- integration questions  
 
-Email / Password
+via issues, discussions, or direct contact (depending on how this repository is shared).
 
-Google OAuth
+---
 
-GitHub OAuth
+## Credits
 
-Token/session security
-
-User management in MongoDB
-
-Production-ready.
-
-⚙️ Architecture & Tech Stack
-
-Frontend: Angular, Monaco Editor, Material
-
-Backend: Node.js, Express
-
-Realtime: Socket.IO + Redis adapter
-
-Database: MongoDB
-
-Rendering: Custom Handlebars engine + SSR
-
-Deployment: PM2 cluster, Nginx
-
-AI: OpenAI GPT for translations
-
-🎯 What’s Included in the V0 Beta
-
-The V0 Beta is fully functional and includes:
-
-Complete editor UI
-
-Templating engine
-
-SSR live preview
-
-Datasources + REST API
-
-Auth system
-
-AI multilingual translation
-
-XLSX export
-
-Snippet/YAML generator
-
-Intellisense (beta version)
-
-Error handling & logs
-
-Example project + onboarding
-
-This version is meant for early adopters & testers.
-
-🧭 Roadmap
-🟩 NOW (During V0 Beta)
-
-Finalize Intellisense context-awareness
-
-Improve UX in the Studio
-
-Add more template examples
-
-Polish WYSIWYG editor
-
-Fix minor visual/UI rough edges
-
-Improve documentation
-
-🟨 NEXT (V1 Candidate)
-
-Advanced version history
-
-Undo/Redo global system
-
-Public shareable preview links
-
-Plugin system (helpers, datasources, render logic)
-
-Workspace multi-project
-
-Asset upload improvements
-
-Deployment & publishing helpers
-
-🟧 LATER (Post V1)
-
-Marketplace (templates, components, datasources)
-
-Collaborative editing (real-time multiplayer)
-
-AI-assisted template generation
-
-Built-in hosting + CDN
-
-ElasticSearch integration for content indexing
-
-Analytics and performance dashboards
-
-Since this is a V0 Beta, your feedback is extremely valuable.
-
-Please open issues for:
-
-bugs
-
-missing features
-
-UX suggestions
-
-improvement ideas
-
-Or contact directly through GitHub Discussions.
-
-💙 Credits
-
-Built by Fabrice Grenouillet — 25 years of experience in development, Node.js specialist, creator of Ekit.
+Ekit is created and maintained by **Fabrice “Fa” Grenouillet**,  
+a developer with 20+ years of experience in application development, Node.js, Angular, and data-driven tools.
