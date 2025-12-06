@@ -204,5 +204,5 @@ via issues, discussions, or direct contact (depending on how this repository is 
 
 ## Credits
 
-Ekit is created and maintained by **Fabrice “Fa” Grenouillet**,  
+Ekit is created and maintained by **Fabrice Grenouillet**,  
 a developer with 20+ years of experience in application development, Node.js, Angular, and data-driven tools.
