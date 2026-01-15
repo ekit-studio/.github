@@ -1,5 +1,8 @@
 # Ekit – V0 Beta
 
+⚠️ This project is not open source.
+> The repository is used to document the architecture, roadmap, and technical decisions behind Ekit Studio.
+
 A modern template-driven dynamic content engine with SSR, data sources, live preview, multilingual AI, and a powerful studio built with Angular + Monaco Editor.
 
 > **Status**: V0 Beta – Private (non open source)
