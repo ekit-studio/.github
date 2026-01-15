@@ -1,10 +1,5 @@
 # Ekit – V0 Beta
 
-⚠️ This project is not open source.
-> The repository is used to document the architecture, roadmap, and technical decisions behind Ekit Studio.
-
-A modern template-driven dynamic content engine with SSR, data sources, live preview, multilingual AI, and a powerful studio built with Angular + Monaco Editor.
-
 > **Status**: V0 Beta – Private (non open source)
 
 Ekit allows developers to create dynamic pages and components using a custom Handlebars-like templating engine, connected to MongoDB datasources, rendered via SSR, and edited in a modern UI with live preview, AI-assisted multilingual data, and snippet generation.
