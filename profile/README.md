@@ -1,4 +1,4 @@
-# Ekit – V0 Beta
+# Ekit Studio – V0 Beta
 
 A modern template-driven dynamic content engine with SSR, data sources, live preview, multilingual AI, and a powerful studio built with Angular + Monaco Editor.
 
