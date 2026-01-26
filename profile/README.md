@@ -51,6 +51,7 @@ This V0 Beta is fully functional and aimed at early adopters and testers.
 - Live SSR preview with instant update  
 - Data editor (multilingual fields, WYSIWYG, selects, etc.)  
 - Integrated assets browsing and usage
+- Custom domain configuration wth free SSL (lets encrypt)
 
 ### AI-Powered Multilingual Support
 
