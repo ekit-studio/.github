@@ -151,21 +151,21 @@ The goal of this Beta is to validate the core UX, stability, and developer exper
 - Add more template and datasource examples  
 - Polish WYSIWYG editor integration  
 - Improve documentation and onboarding
+- Public shareable preview URLs
+- Multi-project workspaces
+- Deployment and publishing helpers
 
 ### Next (V1 Candidate)
 
 - Advanced version history for templates and datasources  
-- Global undo/redo system  
-- Public shareable preview URLs  
+- Global undo/redo system
+- Real-time collaborative editing (multi-user)  
 - Plugin system (custom helpers, custom datasources, custom logic)  
-- Multi-project workspaces  
 - Improved asset management and upload flows  
-- Deployment and publishing helpers
 
 ### Later (Post V1)
 
 - Marketplace for templates, components, and datasources  
-- Real-time collaborative editing (multi-user)  
 - AI-assisted template generation and refactoring  
 - Built-in hosting and CDN for generated content  
 - ElasticSearch integration for content indexing and search  
