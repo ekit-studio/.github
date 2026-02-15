@@ -12,7 +12,7 @@ Ekit allows developers to create dynamic pages and components using a custom Han
 
 Ekit is a studio and runtime engine designed to:
 
-- Define content structures as **datasources** in MongoDB  
+- Define structured content **datasources** through the UI
 - Create **templates** based on a custom Handlebars-style syntax  
 - Render content via **server-side rendering (SSR)**  
 - Edit content and templates in a **web studio** with live preview  
@@ -41,6 +41,7 @@ This V0 Beta is fully functional and aimed at early adopters and testers.
 - Automatic validation  
 - Live updates reflected instantly in SSR preview  
 - Auto-generated REST API (CRUD) for each datasource
+- Custom domain deployment
 
 ### Studio (Angular + Monaco Editor)
 
@@ -137,6 +138,10 @@ The V0 Beta includes:
 - Intellisense (beta)  
 - Error handling and logging  
 - Example project and onboarding flow
+- Improve Studio UX (ergonomics, clarity, messages)
+- Improve documentation and onboarding
+- Public shareable preview URLs
+- Multi-project workspaces
 
 The goal of this Beta is to validate the core UX, stability, and developer experience.
 
@@ -147,12 +152,8 @@ The goal of this Beta is to validate the core UX, stability, and developer exper
 ### Now (during V0 Beta)
 
 - Finalize Intellisense context-awareness  
-- Improve Studio UX (ergonomics, clarity, messages)  
 - Add more template and datasource examples  
 - Polish WYSIWYG editor integration  
-- Improve documentation and onboarding
-- Public shareable preview URLs
-- Multi-project workspaces
 - Deployment and publishing helpers
 
 ### Next (V1 Candidate)
