@@ -4,7 +4,7 @@ A modern template-driven dynamic content engine with SSR, data sources, live pre
 
 > **Status**: V0 Beta – Private (non open source)
 
-Ekit allows developers to create dynamic pages and components using a custom Handlebars-like templating engine, connected to MongoDB datasources, rendered via SSR, and edited in a modern UI with live preview, AI-assisted multilingual data, and snippet generation.
+Ekit allows developers to create dynamic pages and components using a custom Handlebars-like templating engine, rendered via SSR, and edited in a modern UI with live preview, AI-assisted multilingual data, and snippet generation.
 
 ---
 
@@ -32,9 +32,9 @@ This V0 Beta is fully functional and aimed at early adopters and testers.
 - Dynamic SSR rendering  
 - Error logging and debug information
 
-### Datasources (MongoDB)
+### Datasources
 
-- Table-based model backed by MongoDB  
+- Table-based model
 - Multilingual fields support  
 - Field types: text, number, boolean, select, rich text (WYSIWYG)  
 - `single` and `list` modes  
